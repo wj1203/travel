@@ -5,8 +5,10 @@
     </div>
     <div class="header-center">
       <span class="iconfont">&#xe639;</span>
-      搜索</div>
-    <div class="header-right">城市
+      搜索
+    </div>
+    <div class="header-right">
+      城市
       <span class="iconfont arrow-down">&#xe64a;</span>
     </div>
   </div>
@@ -19,7 +21,8 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
-@import '~styles/varibles.styl'
+@import '~styles/varibles.styl';
+
 .header {
   display: flex;
   line-height: 0.86rem;
@@ -32,13 +35,13 @@ export default {
   }
 
   .header-center {
-    flex: 01;
-    height : .64rem
-    line-height: .64rem;
-    margin-top: .1rem;
-    margin-left: .2rem;
+    flex: 1;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    margin-top: 0.1rem;
+    margin-left: 0.2rem;
     background: #fff;
-    border-radius: .1rem;
+    border-radius: 0.1rem;
     color: #ccc;
   }
 
@@ -46,8 +49,9 @@ export default {
     width: 1.24rem;
     float: right;
     text-align: center;
-    .arrow-down{
-       font-size .24rem;
+
+    .arrow-down {
+      font-size: 0.24rem;
     }
   }
 }
