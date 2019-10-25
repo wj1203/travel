@@ -1,8 +1,14 @@
 <template>
   <div class="header">
-    <div class="header-left">返回</div>
-    <div class="header-center">搜索</div>
-    <div class="header-right">城市</div>
+    <div class="header-left">
+      <span class="iconfont">&#xe6b7;</span>
+    </div>
+    <div class="header-center">
+      <span class="iconfont">&#xe639;</span>
+      搜索</div>
+    <div class="header-right">城市
+      <span class="iconfont arrow-down">&#xe64a;</span>
+    </div>
   </div>
 </template>
 
@@ -13,10 +19,11 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
+@import '~styles/varibles.styl'
 .header {
   display: flex;
   line-height: 0.86rem;
-  background: #00bcd4;
+  background: $bgColor;
   color: #fff;
 
   .header-left {
@@ -39,6 +46,9 @@ export default {
     width: 1.24rem;
     float: right;
     text-align: center;
+    .arrow-down{
+       font-size .24rem;
+    }
   }
 }
 </style>
